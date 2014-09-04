@@ -21,7 +21,7 @@ before_script:
   - sudo beanstalkd -d -l 127.0.0.1 -p 11300
 
   # mysql
-  - mysql -e 'CREATE DATABASE database_name;'
+  - mysql -e 'CREATE DATABASE database_name;' 
   - mysql database_name < config/schema-mysql.sql
 
   # extensions
